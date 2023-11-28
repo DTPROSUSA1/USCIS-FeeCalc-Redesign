@@ -1,0 +1,33 @@
+Active: true
+I-90:
+  version: 1.0 ## increment version everytime this data is updated
+  Form Number: I-90
+  Form Name: Application to Replace Permanent Resident Card
+  File Online:
+    display_label: File Online Now!
+    url: "https://www.uscis.gov/i-90"
+  Filing Eligibility:
+    0:
+      name: <b>General filing, unless noted below.</b>
+      Fee:
+        Paper Filing: "$465.00"
+    1:
+      name: If you have reached your 14th birthday and your existing card will expire <b>before</b> your 16th birthday.
+      Fee:
+        Paper Filing: "$465.00"
+    2:
+      name: If you have reached your 14th birthday, and your existing card will expire <b>after</b> your 16th birthday.
+      Fee:
+        Paper Filing: "$0.00"
+    3:
+      name: If you are filing because we issued your previous card, but you never received it.
+      Fee:
+        Paper Filing: "$0.00"
+    4:
+      name: If you are filing because we issued the card with incorrect information because of a DHS error.
+      Fee:
+        Paper Filing: "$0.00"
+    5:
+      name: <b>Certain applicants may be eligible for a Fee Waiver. See Form <u>${I-912 Instructions}</u></b>.
+      Fee:
+        Paper Filing: "$0.00"

@@ -1,0 +1,17 @@
+Active: true
+I-130:
+  version: 1.0 ## increment version everytime this data is updated
+  Form Number: I-130
+  Form Name: Petition for Alien Relative
+  File Online:
+    display_label: File Online Now!
+    url: "https://www.uscis.gov/i-130"
+  Filing Eligibility:
+    0:
+      name: <b>General filing, unless otherwise noted below.</b>
+      Fee:
+        Paper Filing: "$675.00"
+    1:
+      name: Filed on behalf of Afghan nationals (beneficiary) with immigrant visa immediately available.
+      Fee:
+        Paper Filing: "$0.00 (through Sept. 30, 2024)"

@@ -1,0 +1,10 @@
+Active: true
+I-526:
+  version: 1.0 ## increment version everytime this data is updated
+  Form Number: I-526
+  Form Name: Immigrant Petition by Standalone Investor
+  Filing Eligibility:
+    0:
+      name: <b>General filing.</b>
+      Fee:
+        Paper Filing: "$11,160.00"

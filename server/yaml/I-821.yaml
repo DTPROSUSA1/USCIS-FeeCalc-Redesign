@@ -1,0 +1,22 @@
+Active: true
+I-821:
+  version: 1.0 ## increment version everytime this data is updated
+  Form Number: I-821
+  Form Name: Application for Temporary Protected Status
+  Filing Eligibility:
+    0:
+      name: If you are filing for <b>initial</b> registration.
+      Fee:
+        Paper Filing: "$50.00 plus additional fees"
+    1:
+      name: If you are filing for <b>re-registration</b>.
+      Fee:
+        Paper Filing: "$0.00 plus additional fees"
+    2:
+      name: <b><u>Additional Fees:</u></b> Biometric Services Fee
+      Fee:
+        Paper Filing: "$30.00"
+    3:
+      name: <b>Certain applicants may be eligible for a Fee Waiver. See Form <u>${I-912 Instructions}</u></b>.
+      Fee:
+        Paper Filing: "$0.00"
