@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import './../styles/common.css';
 import './../styles/theme.css';
 
-const Accordion = () => {
+const Accordion = ({showElements}) => {
     const [state, setState] = useState({
         showOne: false,
         showTwo: false,
         arrowUpOne: false,
         arrowUpTwo: false
     });
-
+    console.log(showElements);
     const handleShowOne = () => {
         console.log("handle show one fired");
         setState(prevState => ({
@@ -18,7 +18,7 @@ const Accordion = () => {
             arrowUpOne: !prevState.arrowUpOne
         }));
     };
-
+    
     const handleShowTwo = () => {
         console.log("handle show two fired");
         setState(prevState => ({
@@ -29,9 +29,9 @@ const Accordion = () => {
     };
 
       return(  
-<div style={{marginBottom: "25px", paddingBottom: "25px", display: "block", border: "none"}}>
-  <span id="accordion-navigators">Calculate Your Fees</span>
-<div className="guidePanelNode parentWhatFeeCalcPanel" id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel__" onClick={handleShowOne}>                     
+<div style={{marginBottom: !showElements ? "25px": "0px", paddingBottom: !showElements ? "25px": "0px", display: "block", border: "none"}}>
+  <span style={{ borderColor: !showElements ? "#CCCCC": '#fff', paddingBottom: !showElements ? "40px": "0px" }} id="accordion-navigators">Calculate Your Fees</span>
+{!showElements ? <React.Fragment> <div className="guidePanelNode parentWhatFeeCalcPanel" id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel__" onClick={handleShowOne}>                     
 <div className="accordion">
 <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel___layoutContainer" className="row guideLayout guideAccordionLayout" >
 <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel___layoutPanelContainer" className="col-md-12 PanelContainer">
@@ -90,6 +90,8 @@ const Accordion = () => {
 </div>
 </div>
 </div>
+</React.Fragment> : null}
+
 </div>
       );
     }

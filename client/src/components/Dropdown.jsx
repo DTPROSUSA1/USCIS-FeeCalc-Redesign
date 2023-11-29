@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
-const Dropdown = ({ onFormSubmit }) => {
+import "../styles/common.css"
+const Dropdown = ({  onFormSubmit }) => {
   const [forms, setForms] = useState([]);
   const [selectedForm, setSelectedForm] = useState('');
 
@@ -11,6 +11,7 @@ const Dropdown = ({ onFormSubmit }) => {
       .then((data) => setForms(data))
       .catch((error) => console.error('Error fetching forms:', error));
   }, []);
+
 
   const handleChange = (event) => {
     setSelectedForm(event.target.value);
