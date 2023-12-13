@@ -45,7 +45,35 @@ div.aemform.aem-Grid-Column--default--12{
 	background-color: #fff;
 }
 
+.fee-calculator-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+  }
+  
+  .dropdown-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .form-details {
+	margin-left: 20px; /* Adjust as needed */
+  }
+  
+  .submit-button {
+	margin-top: 20px; /* Adjust as needed */
+	/* Add more styling for the button as needed */
+  }
+  
 
+.right{
+	float: right;
+}
+
+.dropDownRow{
+	width: fit-content;
+	margin: auto;
+}
 #guideContainerForm {
     background-color: #ffffff;
 }
@@ -934,7 +962,7 @@ div.aemform.aem-Grid-Column--default--12{
 	}
 
 	.dropDownList select{
-	/* background:url(../assets/Icon-Dropdown-down.svg) calc(100% - 16px) 50% / 1rem auto no-repeat; */
+		background:url(../styles/content/Icon-Dropdown-down.svg) calc(100% - 16px) 50% / 1rem auto no-repeat;
 		color:#444444;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -951,7 +979,7 @@ div.aemform.aem-Grid-Column--default--12{
 		width:100%
 	}
 	.dropDownList select.active{
-		/* background:url(../assets/Icon-Dropdown-up.svg) calc(100% - 16px) 50% / 1rem auto no-repeat; */
+		background:url(../styles/content/Icon-Dropdown-up.svg) calc(100% - 16px) 50% / 1rem auto no-repeat;
 		background-color: #FFFFFF;
 	}
 	/*.dropDownList::after{
@@ -2142,7 +2170,7 @@ div.aemform.aem-Grid-Column--default--12{
 		font-size: 1.7rem;
 		padding: 21px 16px 16px 32px;
 		line-height: 1.5;
-		margin-right: 2.5rem;
+		margin-right: 0;
 		margin-left: 0rem;
 		color: #444444;
 		margin-top: 8px;

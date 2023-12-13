@@ -27,6 +27,32 @@ app.get("/api/data/:filename", (req, res) => {
   }
 });
 
+app.get("/api/config", (req, res) => {
+    const yamlFilePath = path.join(__dirname, 'yaml', 'global_config.yaml');
+    fs.readFile(yamlFilePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            res.status(404).json({ error: 'Configuration file not found' });
+            return;
+        }
+
+        try {
+            const yamlData = yaml.load(data);
+            console.log(`YAML data loaded for global_config:`, yamlData);
+
+            // Check if the yamlData is not empty
+            if (yamlData) {
+                res.json(yamlData);
+            } else {
+                res.status(404).json({ error: 'No configuration data found' });
+            }
+        } catch (e) {
+            console.error(e);
+            res.status(500).json({ error: 'Error parsing YAML data' });
+        }
+    });
+});
+
 app.get('/api/forms', (req, res) => {
     const yamlDir = path.join(__dirname, 'yaml');
     fs.readdir(yamlDir, (err, files) => {
@@ -45,8 +71,11 @@ app.get('/api/forms', (req, res) => {
             const fileContents = fs.readFileSync(filePath, 'utf8');
             try {
                 const data = yaml.load(fileContents);
-                if (data && data.Active) {
-                    activeForms.push(path.basename(file, '.yaml'));
+                // Extract form name from the file name (excluding '.yaml' extension)
+                const formName = path.basename(file, '.yaml');
+                // Check if the form is active
+                if (data && data[formName] && data[formName].Active) {
+                    activeForms.push(formName);
                 }
             } catch (e) {
                 console.error(`Error parsing YAML file ${file}:`, e);
@@ -59,6 +88,7 @@ app.get('/api/forms', (req, res) => {
         });
     });
 });
+
 
 
 app.get('/api/form-details/:formName', (req, res) => {
@@ -77,8 +107,8 @@ app.get('/api/form-details/:formName', (req, res) => {
             const yamlData = yaml.load(data);
             console.log(`YAML data loaded for form: ${formName}`, yamlData);
 
-            // Check if the form is active and if the form details are present
-            if (yamlData && yamlData.Active && yamlData[formName]) {
+            // Check if the specific form data is present and if it is active
+            if (yamlData && yamlData[formName] && yamlData[formName].Active) {
                 res.json(yamlData[formName]);
             } else {
                 res.status(404).json({ error: 'Form not active or not found' });
@@ -89,6 +119,7 @@ app.get('/api/form-details/:formName', (req, res) => {
         }
     });
 });
+
 
 // Start the server
 app.listen(PORT, () => {

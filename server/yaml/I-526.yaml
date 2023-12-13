@@ -1,6 +1,6 @@
-Active: true
 I-526:
   version: 1.0 ## increment version everytime this data is updated
+  Active: true
   Form Number: I-526
   Form Name: Immigrant Petition by Standalone Investor
   Filing Eligibility:

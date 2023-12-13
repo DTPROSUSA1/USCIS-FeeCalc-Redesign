@@ -9,7 +9,7 @@ const Accordion = ({showElements}) => {
         arrowUpOne: false,
         arrowUpTwo: false
     });
-    console.log(showElements);
+    // console.log(showElements);
     const handleShowOne = () => {
         console.log("handle show one fired");
         setState(prevState => ({

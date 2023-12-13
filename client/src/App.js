@@ -1,4 +1,4 @@
-import React, { useState, useCallback  } from "react";
+import React, { useState, useEffect  } from "react";
 import "./App.css";
 import "./styles/common.css";
 import "./styles/feeCalc.min.css";
@@ -6,11 +6,22 @@ import Header from "./components/Header";
 import Accordion from "./components/Accordion";
 import FormAccordion from "./components/FormAccordion";
 import Dropdown from "./components/Dropdown";
+import Footer from "./components/Footer";
 
 function App() {
   const [showAccordion, setShowAccordion] = useState(false);
   const [selectedFormDetails, setSelectedFormDetails] = useState(null);
   const [showElements, setShowElements] = useState(false);
+  const [globalConfig, setGlobalConfig] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/config')
+      .then((response) => response.json()) // Parse the response as JSON
+      .then((config) => {
+        setGlobalConfig(config['General']);
+      })
+      .catch((error) => console.error('Error loading configuration:', error));
+  }, []);
 
   const handleFormSubmit = (formName) => {
     if (formName) {
@@ -42,11 +53,12 @@ function App() {
           {!showElements && <p>For forms not listed, please refer to the Form Instructions or our <a href="https://www.uscis.gov/forms/filing-fees" data-clickable-id="clickable-464" target="_blank" title="https://www.uscis.gov/forms/filing-fees">Filing Fees</a> page.</p>}
           {!showElements && <Dropdown onFormSubmit={handleFormSubmit} />}
           {showAccordion && selectedFormDetails && (
-            <FormAccordion formDetails={selectedFormDetails} />
+            <FormAccordion formDetails={selectedFormDetails} globalConfig={globalConfig} />
           )}
-          {showElements && <button onClick={handleStartOver}>Start Over</button>}
+          {showElements && <button style={{marginBottom: "5rem"}} onClick={handleStartOver}>Start Over</button>}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

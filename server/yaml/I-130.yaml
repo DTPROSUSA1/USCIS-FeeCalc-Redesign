@@ -1,6 +1,6 @@
-Active: true
 I-130:
   version: 1.0 ## increment version everytime this data is updated
+  Active: true
   Form Number: I-130
   Form Name: Petition for Alien Relative
   File Online:
