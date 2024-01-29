@@ -65,6 +65,24 @@ div.aemform.aem-Grid-Column--default--12{
 	/* Add more styling for the button as needed */
   }
   
+  .custom-bullet-list {
+	list-style-type: none; /* Removes default bullet styling */
+	padding: 0; /* Removes default padding */
+  }
+  
+   .custom-bullet-list li {
+	display:block;
+  }
+   
+  .custom-bullet-list li:nth-child(odd) {
+	background-color: white;
+  }
+  
+  .custom-bullet-list li:nth-child(even) {
+	background-color: rgb(239, 238, 238);
+  }
+  
+
 
 .right{
 	float: right;

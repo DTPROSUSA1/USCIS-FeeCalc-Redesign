@@ -66,6 +66,9 @@ const FormAccordion = ({ formDetails, globalConfig }) => {
       allowedTags: false,
       allowedAttributes: false
     });
+
+    const bulletPoints = sanitizedDetails.split(';').filter(point => point.trim() !== '');
+
     return (
       <div key={index} className="guidePanelNode parentWhatFeeCalcPanel" onClick={() => toggleAccordion(index)}>
         <div className="accordion">
@@ -79,11 +82,15 @@ const FormAccordion = ({ formDetails, globalConfig }) => {
               <span dangerouslySetInnerHTML={{ __html: sanitizedName }}  className={`guideSummary ${openAccordions[index] ? "dtph-active" : ""}`} id='dtph-us-gov-desc-1'/>
             </a>
           </div>
-          <div className="row" style={{ display: openAccordions[index] ? 'block' : 'none', marginLeft: '30px' }}>
+          <div className="row" style={{ display: openAccordions[index] ? 'block' : 'none', marginLeft: bulletPoints.length < 1 ? "30px" : '0px' }}>
             <div className="col-md-12 active">
               <div className="guidetextdraw guidefield">
-              <p dangerouslySetInnerHTML={{ __html: sanitizedDetails }}></p>
-              <p dangerouslySetInnerHTML={{ __html: feeString }}></p>
+              <ul className="custom-bullet-list">
+                  {bulletPoints.map((point, index) => (
+                    <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                  ))}
+              </ul>
+              <b><p dangerouslySetInnerHTML={{ __html: feeString }}></p></b>
               </div>
             </div>
           </div>

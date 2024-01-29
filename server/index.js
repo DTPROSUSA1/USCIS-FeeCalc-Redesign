@@ -3,6 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const yaml = require('js-yaml');
 const app = express();
+const cors = require('cors');
+
 const PORT = process.env.PORT || 3001;
 
 // Function to read and parse YAML
@@ -16,6 +18,7 @@ function getYamlData(filePath) {
   }
 }
 
+app.use(cors());
 // Route to handle YAML data retrieval
 app.get("/api/data/:filename", (req, res) => {
   const filename = req.params.filename;
