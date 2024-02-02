@@ -1,0 +1,119 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "USCIS Fee Calculator API",
+    "description": "Test and use the USCIS Fee Calculator API to get the form details, form data, and update the form data."
+  },
+  "host": "localhost:3001",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/update-yaml/{filename}": {
+      "put": {
+        "description": "Update YAML file content",
+        "parameters": [
+          {
+            "name": "filename",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "YAML file content as a raw yaml",
+          "required": true,
+          "content": {
+            "text/plain": {
+              "schema": {
+                "type": "string",
+                "example": "I-90:\n  version: 1.0 #Increment version when making updates\n  Active: true #Turns the form Active or Inactive(booleon)\n  Form Number: I-90\n  Form Name: Application to Replace Permanent Resident Card\n  File Online:\n    display_label: File Online Now!\n    url: \"https://www.uscis.gov/i-90\"\n  Filing Eligibility:\n    0:\n      name: <b>General filing, unless noted below.</b>\n      Fee:\n        Paper Filing: \"$465.00\""
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+            
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+    
+    ,
+    "/api/config": {
+      "get": {
+        "description": "Get the global configuration yaml details",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api/forms": {
+      "get": {
+        "description": "Gets list of active forms from the server",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api/form-details/{formName}": {
+      "get": {
+        "description": "Get form details",
+        "parameters": [
+          {
+            "name": "formName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/restart": {
+      "post": {
+        "description": "Restart the server",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}

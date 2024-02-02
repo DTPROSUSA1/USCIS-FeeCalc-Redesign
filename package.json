@@ -1,10 +1,11 @@
 {
-  "name": "fee-cal-redesign",
+  "name": "fee-cal-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "swagger-autogen": "node server/swagger.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "openapi-types": "^12.1.3",
+    "swagger-autogen": "^2.23.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }

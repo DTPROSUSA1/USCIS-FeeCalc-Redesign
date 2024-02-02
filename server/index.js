@@ -1,11 +1,25 @@
 const express = require("express");
+const cors = require('cors');
+const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 const yaml = require('js-yaml');
-const app = express();
-const cors = require('cors');
+const swaggerUI = require('swagger-ui-express');
+const swaggerFile = require('./swagger_output.json')
+const bodyParser = require('body-parser');
 
-const PORT = process.env.PORT || 3001;
+const app = express();
+
+app.use(express.json());
+
+// Serve Swagger documentation
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerFile));
+
+app.use(cors());
+
+app.use(bodyParser.text({ type: 'text/plain' }));
+
+const PORT = 3001;
 
 // Function to read and parse YAML
 function getYamlData(filePath) {
@@ -18,17 +32,34 @@ function getYamlData(filePath) {
   }
 }
 
-app.use(cors());
-// Route to handle YAML data retrieval
-app.get("/api/data/:filename", (req, res) => {
-  const filename = req.params.filename;
-  const data = getYamlData(`./yaml/${filename}.yaml`);
-  if (data) {
-    res.json(data);
-  } else {
-    res.status(404).send('File not found');
-  }
+
+app.put('/api/update-yaml/:filename', (req, res) => {
+    const filename = req.params.filename;
+    const newYamlData = req.body; // This is already a YAML-formatted string
+
+    const yamlFilePath = path.join(__dirname, 'yaml', `${filename}.yaml`);
+    try {
+        // Directly write the YAML string to file without serialization
+        fs.writeFileSync(yamlFilePath, newYamlData, 'utf8');
+        console.log(newYamlData); // Log the raw YAML string
+        res.status(200).send('YAML file updated successfully');
+    } catch (e) {
+        console.error(e);
+        res.status(500).json({ error: 'Error updating YAML file' });
+    }
 });
+
+
+
+// app.get("/api/data/:filename", (req, res) => {
+//   const filename = req.params.filename;
+//   const data = getYamlData(`./yaml/${filename}.yaml`);
+//   if (data) {
+//     res.json(data);
+//   } else {
+//     res.status(404).send('File not found');
+//   }
+// });
 
 app.get("/api/config", (req, res) => {
     const yamlFilePath = path.join(__dirname, 'yaml', 'global_config.yaml');
@@ -121,6 +152,15 @@ app.get('/api/form-details/:formName', (req, res) => {
             res.status(500).json({ error: 'Error parsing YAML data' });
         }
     });
+});
+
+app.post('/restart', (req, res) => {
+    res.json({ message: 'Restarting server...' });
+    spawn(process.argv[0], process.argv.slice(1), {
+        stdio: 'inherit',
+        detached: true
+    }).unref();
+    process.exit();
 });
 
 
