@@ -1,0 +1,4 @@
+com\adobe\aem\guides\wkndspa\react\it\tests\PublishPageValidationIT.class
+com\adobe\aem\guides\wkndspa\react\it\tests\CreatePageIT.class
+com\adobe\aem\guides\wkndspa\react\it\tests\GetPageIT.class
+com\adobe\aem\guides\wkndspa\react\it\tests\HtmlUnitClient.class

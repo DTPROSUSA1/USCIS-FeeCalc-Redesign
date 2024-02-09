@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/uscis-fee-calculator/clientlibs"/>
+    <filter root="/apps/uscis-fee-calculator/components"/>
+    <filter root="/apps/uscis-fee-calculator/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,524 @@
+body, html{color: #444;line-height: 1.25;background-image: none;background: transparent; font-family: "Source Sans Pro";font-style:normal;font-weight:400; -webkit-text-size-adjust: 100%;}
+#dtph-site-search,.dtph-region-header_second_right{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+#dtph-site-search .fa-search {height: 21px;width: 20px;}
+#dtph-lang-color {
+    color: #069;
+}
+
+/* #dtph-make-invisible{
+    display:none !important;
+} */
+
+.dtph-header-util-links__sep {
+    margin-right: 0px;
+}
+
+#dtph-make-dark-blue{
+    color: #036;
+}
+
+.dtph-make-search-invisible{
+    display: none !important;
+}
+
+.dtph-hide{
+    display: none !important;
+}
+/* #no-hover{
+    pointer-events:none;
+} */
+#no-hover:hover{
+    background-color: unset !important;
+    color: unset !important;
+}
+input {
+    font-family: "Source Sans Pro" !important;
+}
+.dtph-shadow{
+webkit-box-shadow: "0 3px 6px rgba(0,0,0,.16)";
+-moz-box-shadow: "0 3px 6px rgba(0,0,0,.16)";
+box-shadow: "0 3px 6px rgba(0,0,0,.16)";
+
+}
+	.mobile-menu-links {	
+        font-family: "Source Sans Pro";	
+         font-size: 1rem;	
+         line-height: 1.25;	
+         font-style:normal;	
+         font-weight:600;	
+}	
+.highlight-strong .font-ssp-semibold .sign-in--button__text{	
+    font-family: "Source Sans Pro";	
+        font-size: 1rem;	
+        line-height: 1.25;	
+        font-style:normal;	
+        font-weight:600;
+        width: "200px";
+}	
+.my-uscis-link .font-ssp-semibold {	
+        font-family: "Source Sans Pro";	
+        font-size: 1rem;	
+        line-height: 1.25;	
+        font-style:normal;	
+        font-weight:600;	
+}
+#dtph-header-second{
+    font-family: "Source Sans Pro";
+    font-size: 0.75rem;
+    line-height: 1.25;
+    font-weight: 300;
+    font-style:normal;
+    font-weight:400;
+	color: #444;
+}
+#dtph-site-search {	
+   font-family: "Source Sans Pro";	
+       font-size: 1rem;	
+       line-height: 1.25;	
+       font-style:normal;	
+       font-weight:400;	
+}	
+.dtph-sign-in--drop-down {	
+    font-family: "Source Sans Pro";	
+        font-size: 1.125rem;	
+        line-height: 1.25;	
+        font-style:normal;	
+        font-weight:400;	
+}
+.dtph-menu--horizontal .dtph-menu{	
+    margin-top: 0px;	
+    color: #036;	
+    background-color: #ffffff;	
+}
+div.dtph-aemform.dtph-aem-GridColumn.dtph-aem-GridColumn--default--12{
+	background-color: #fff;
+}
+
+
+#dtph-globe-wrapper {
+	display: inline;
+	padding-right: 0.25px;
+}
+
+#dtph-color-blue{
+	color: #069;
+}
+@media (min-width: 861px) and (max-width: 1025px) {
+	.dtph-header-third__first {
+    height: 64px;
+    padding-right: 16px;
+    padding-left: 50px;
+}
+#dtph-header-third{-webkit-box-shadow:0 3px 6px rgba(0,0,0,.16);-moz-box-shadow:0 3px 6px rgba(0,0,0,.16);box-shadow:0 3px 6px rgba(0,0,0,.16);}
+}
+@media (max-width: 860px){
+.dtph-input-group__btn--icon {
+    position: absolute;
+    top: 12px;
+    right: 1rem;
+    float: right;
+    text-align: right;
+    white-space: nowrap;
+}
+}
+
+a.dtph-util-linklast {
+	color: #069;
+}
+
+#dtph-guideContainerTheme {
+	background-color: #fff;
+}
+
+#dtph-uscis-footer-logo {
+    height: 34px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#dtph-header-util-links {
+	color: #069;
+}
+/*! CSS Used from: Embedded */
+svg:not(:root).svg-inline--fa.dtph-svg{overflow:visible;}
+.dtph-svg.svg-inline--fa{/*display:inline-block;*/font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em;}
+.dtph-svg.svg-inline--fa.fa-w-10{width:.625em;}
+.dtph-svg.svg-inline--fa.fa-w-14{width:.875em;}
+.dtph-svg.svg-inline--fa.fa-w-16{width:1em;}
+/*! CSS Used from: https://www.uscis.gov/sites/default/files/css/css_RWlYmQDQAujz-Uiiru3de2SksWXmUzHWRGF3kmdMfHk.css ; media=all */
+@media all{
+.dtph-hidden{display:none;}
+.dtph-visually-hidden{position:absolute !important;overflow:hidden;clip:rect(1px,1px,1px,1px);width:1px;height:1px;word-wrap:normal;}
+}
+/*! CSS Used from: https://www.uscis.gov/sites/default/files/css/css_Dv12RjNt6wmBby6bqNLUrLtmgswnAor3n7AbrVTh_sY.css ; media=all */
+@media all{
+.dtph-hide-close {
+ display: none;
+}
+a.dtph-a{background-color:transparent;}
+strong.dtph-strong{font-weight:bolder;}
+img.dtph-img{border-style:none;}
+button.dtph-button,input.dtph-input{font-family:inherit;font-size:100%;line-height:1.25;margin:0}
+button.dtph-button,input.dtph-input{overflow:visible;}
+button.dtph-button{text-transform:none;}
+button.dtph-button,[type=button],[type=submit]{-webkit-appearance:button;}
+button.dtph-button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0;}
+button.dtph-button:-moz-focusring,[type=button]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;line-height: 1.25;}
+a.dtph-a{text-decoration:none;}
+a.dtph-a:focus{outline-style:dotted;outline-width:1px;}
+a.dtph-a:link{color:#069;}
+a.dtph-a:hover{color:#069;text-decoration:underline;}
+a.dtph-link-decorate{text-decoration:underline;}
+img.dtph-img{height:auto;max-width:100%;}
+p.dtph-p{margin-top:0;margin-bottom:16px;font-family: "Source Sans Pro";font-style:normal;font-weight:400;font-size: 1rem;line-height: 1.25; color: #444;}
+[type=text]{font-size:1rem;line-height:1.4;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #ccc;border-radius:3px;color:#444;display:block;height:48px;min-width:120px;opacity:1;padding-left:14px;width:100%;}
+[type=text]::-ms-clear{display:none;}
+[type=text]:hover,[type=text]:focus{-webkit-box-shadow:0 0 3px #036;-moz-box-shadow:0 0 3px #036;box-shadow:0 0 3px #036;border-color:#069;outline:0;}
+::placeholder{color:#666;opacity:1;text-overflow:ellipsis;}
+::-ms-input-placeholder{color:#666;}
+:-ms-input-placeholder{color:#666;}
+#dtph-block-horizontal,.dtph-content-container{margin:0 auto;width:100%;}
+.dtph-header-util-links__sep {
+    padding-right: 0px;
+}
+
+/*#dtph-globe-wrapper{
+    margin-right: 4px;
+}*/
+#dtph-header-first{padding:0;font-family: "Source Sans Pro";	
+    font-size: 1rem;	
+    line-height: 1.25;	
+    font-style:normal;	
+    font-weight:400;}
+#dtph-header-first .dtph-content-container{max-width:100%;padding-left:0;padding-right:0;}
+.dtph-header-third__first .dtph-content-container{padding-top:16px;padding-bottom:16px;}
+.dtph-menu-toggle--header{float:right;margin-top:20px;}
+#dtph-block-searchplaceholder{margin-top:16px;}
+#dtph-home-logo{height:60px;width:200px;}
+#dtph-header{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    
+}
+#dtph-header-second{font-size:0.75rem;line-height:1.25;background-color:#f9f9f9;height:23px;padding-bottom:32px;padding-top:4px; font-family: "Source Sans Pro";font-style:normal;font-weight:400;}
+#dtph-primary-header{background-color:#f9f9f9;}
+.header-third__first.menu__closed{-webkit-box-shadow:0 3px 6px rgba(0,0,0,.16);-moz-box-shadow:0 3px 6px rgba(0,0,0,.16);box-shadow:0 3px 6px rgba(0,0,0,.16);}
+.dtph-header__items{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-moz-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-ms-flex-pack:space-between;}
+#dtph-header-util-links{display:none;}
+.dtph-header-flag-icon{height:13px;width:23px;}
+#dtph-header-flag{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+#dtph-header-flag-img{margin-right:10px;padding-bottom:1px;padding-top:1px;}
+#dtph-official-text{font-size:0.625rem;line-height:1.3;padding-top:2px;}
+#dtph-us-gov-desc{display:block;text-decoration: underline;}
+#dtph-us-gov-desc.dtph-active{display:inline-block;}
+#dtph-us-gov-desc:visited,#dtph-us-gov-desc:hover{color:#069;}
+#dtph-us-gov-desc::after{font-family:"Font Awesome 5 Pro";font-weight:400;content:"\f107";float:right;margin-right:142px; font-size: 1.33em;  -webkit-text-stroke: 0px #069; margin-top: -2px;}
+#dtph-us-gov-desc.dtph-active::after{font-family:"Font Awesome 5 Pro";font-weight:400;content:"\f106";  font-size: 1.33em;  -webkit-text-stroke: 0px;  -webkit-text-stroke: 0.5px #069; margin-top: -2px;}
+#dtph-block-howyouknowdescription{display:none;padding-bottom:8px;padding-top:20px;}
+.dtph-howyouknow-header-block{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;}
+.dtph-howyouknow-header-block__icon{margin-right:16px;}
+.dtph-howyouknow-header-block__icon__img{max-width:40px !important;max-height:40px;}
+#dtph-block-mobilemenulinks{background-color:#f9f9f9; padding-bottom: 5px;}
+#dtph-primary-header{background-color: #f9f9f9;}
+.dtph-mobile-menu-links{list-style:none;padding-left:0;margin-top:0;margin-bottom:0;padding-top:16px;}
+.dtph-mobile-menu-links .dtph-item{margin-bottom:16px;}
+.dtph-mobile-menu-links .dtph-item a{display:inline-block;width:100%;color:#444;}
+.dtph-language-link:visited,.dtph-language-link:hover,.dtph-util-link:visited,.dtph-util-link:hover{color:#069;}
+.dtph-menu--horizontal{list-style:none;padding: 0;margin-right:.5px;margin-block-start: 0em;padding-inline-start: 0px;}
+#dtph-primary-nav{display:none;}
+.dtph-menu--horizontal .dtph-menu__item{margin:16px 0;}
+.dtph-menu--horizontal .dtph-menu__item:last-child{border-bottom:none;}
+.dtph-menu--horizontal .dtph-nav__link{display:inline-block;width:100%;}
+.dtph-menu--horizontal .dtph-nav__link:visited,.dtph-menu--horizontal .dtph-nav__link:link{color:#036;}
+.dtph-menu--horizontal .dtph-nav__link:active,.dtph-menu--horizontal .dtph-nav__link:focus{text-decoration:none;}
+.dtph-sign-in-link{position: relative; display:none;}
+.dtph-sign-in-link :visited,.dtph-sign-in-link :link{color:#036;}
+.dtph-sign-in-link :active,.dtph-sign-in-link :focus{text-decoration:none;}
+.dtph-sign-in-link__mobile{margin:16px 0; font-size:1.125rem;line-height:1.2777777778;}
+.dtph-sign-in-link__mobile :active,.dtph-sign-in-link :focus{text-decoration:none;}
+.dtph-sign-in-link__mobile :visited,.dtph-sign-in-link :link{color:#036;}
+.dtph-sign-in-link{font-size:1.125rem;line-height:1.2777777778;}
+.dtph-menu-toggle__text{font-weight: 400;font-size: 1.125rem;line-height: 1.2777777778;font-family:"Source Sans Pro";font-style:normal;font-weight:600;}
+#dtph-site-search .dtph-fa-search{height:21px;width:20px;}
+#dtph-site-search .dtph-input-group__field::placeholder{color:#069;text-overflow:ellipsis;}
+#dtph-site-search .dtph-input-group__field::-ms-input-placeholder{color:#069;}
+#dtph-site-search .dtph-input-group__field:-ms-input-placeholder{color:#069;}
+#dtph-site-search .dtph-input-group__field{font-size:1rem;line-height:1.25;height:44px;border-radius:2px;border:none;background-color:#f9f9f9;padding-right:38px;font-family: "Source Sans Pro";font-style:normal;font-weight:400;}
+/*@media (min-width: 861px){*/
+
+.dtph-menu-toggle--header .dtph-menu-toggle__text{margin-left:5px;}
+.dtph-menu-toggle--header .dtph-svg-inline--fa{font-size:1.25rem;line-height:1.4;}
+#dtph-header .dtph-menu-toggle__link-horizontal{border-radius:0;min-width:1px;max-width:504px;padding:0 16px;height:23px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family: "Source Sans Pro";font-style:normal;font-weight:400;font-size:1.125rem;line-height:1.2777777778;background-color:transparent;border:none;color:#036;opacity:1;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+/* button,[type=button],[type=submit]{border-radius:3px;min-width:154px;max-width:100%;padding:11px 13px;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family: "Source Sans Pro";font-style:normal;font-weight:600;font-size:1rem;line-height:1.25;background-color:#069;border:3px solid;border-color:#069;color:#fff;cursor:pointer;opacity:1;} */
+/* button:focus,[type=button]:focus,[type=submit]:focus{background-color:#00476b;border-color:#1d89bf;outline:none;} */
+button:hover,[type=button]:hover,[type=submit]{}
+.dtph-btn--search-submit{padding:0;color :#069 !important; margin-top: -16px !important; margin-right: -9px !important}
+.dtph-btn--search-submit:focus{outline:1px dotted #1d89bf;}
+.dpth-btn--search-submit:hover{background-color: #e6f5fd !important;}
+.dtph-input-group{position:relative;}
+.dtph-input-group__btn--icon{position:absolute;top:12px;right:10px;white-space:nowrap;}
+.dtph-input-group__btn--icon .dtph-btn-icon{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background-color:transparent;border:none;height:auto;min-width:1px;}
+.dtph-input-group__btn--icon .dtph-btn-icon:hover{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background-color:transparent;border:none;height:auto;min-width:1px;}
+.dtph-input-group__btn--icon .dtph-btn-icon:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background-color:transparent;border:none;height:auto;min-width:1px;}
+#dtph-header-third{background-color:#fff; font-family: "Source Sans Pro";font-style:normal;font-weight:600; margin-bottom: -2px;}
+.dtph-font-ssp-semibold{font-family: "Source Sans Pro";font-style:normal;font-weight:600;}
+#dtph-for-semibold{font-family: "Source Sans Pro";font-style:normal;font-weight:600;}
+.dtph-inline-sep{border-right:1px solid #ccc;}
+@media (max-width:1025px){
+#dtph-block-horizontal,#dtph-block-mobilemenulinks .dtph-field__item,.dtph-content-container{padding-right:16px;padding-left:16px;}
+}
+@media (min-width:601px){
+.menu--horizontal .menu{	
+        font-size: 1.125rem;	
+        line-height: 1.2777777778;	
+        text-align: right;	
+}
+.content-container .header-third__second .menu__open{
+    font-family: "Source Sans Pro";	
+    font-style:normal;	
+    font-weight:600;
+    font-size:1.125rem;
+    line-height:1.2777777778;
+}
+button,[type=button],[type=submit]{max-width:504px;width:auto;}
+#dtph-header-second{padding-bottom:4px;padding-top:4px; font-family: "Source Sans Pro";font-style:normal;font-weight:400;};
+#dtph-block-howyouknowdescription{padding-top:20px;}
+#dtph-official-text{font-size:.75rem;line-height:1.25;padding-top:0;}
+#dtph-us-gov-desc{display:inline-block;}
+#dtph-us-gov-desc::after{margin-right:-16px;}
+}
+@media (min-width:861px){
+.dtph-header-third__first {
+    height: 64px;
+    max-width: 1024px;
+    margin: auto;
+  }
+.menu--horizontal .menu {	
+     font-family: "Source Sans Pro";	
+            font-size: 1.125rem;	
+            line-height: 5;	
+            font-style:normal;	
+            font-weight:600;	
+  }	
+.dtph-menu--horizontal{list-style:none;padding: 0;margin-right:.5px;margin-block-start: 0em;padding-inline-start: 0px;}
+#dtph-block-horizontal,.content-container{max-width:1024px;}
+#dtph-block-uscis-design-branding{position:relative;top:13px;}
+#dtph-block-horizontal,.dtph-content-container{max-width:1024px;}
+#dtph-block-mobilemenulinks{display:none;}
+#dtph-site-search,.dtph-region-header_second_right{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex; color: #069;}
+.dtph-region-header_third_first{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-moz-justify-content:space-between;-ms-justify-content:space-between;justify-content:space-between;-ms-flex-pack:space-between; align-items:center;}
+.dtph-header-third__first .dtph-content-container{padding-top:0;padding-bottom:0;}
+#dtph-site-search .dtph-input-group__field {
+    width: 353px;
+}
+#dtph-block-searchplaceholder{margin-top:0;}
+.dtph-sign-in-link{position:relative;color:#036;}
+.dtph-sign-in-link .dtph-svg-inline--fa{margin-top:3px;}
+.dtph-sign-in--drop-down__toggle{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;cursor:pointer;}
+.dtph-sign-in--button{margin-right:8px; color: #036; margin-top: 1.5px;}
+.dtph-sign-in--drop-down{position:absolute; margin-top: 35px; right: -.5px; width:192px;z-index:1;background-color:#fff;box-shadow:0px 1px 5px #0000001F;}
+.dtph-sign-in__menu-header{color:#444;padding:10.5px 16px 16px 16px;border-bottom:1px solid #ebebeb;}
+.dtph-sign-in-links{margin:6px 0 0 0;padding:0;}
+.dtph-sign-in__menu-item{list-style:none;padding-bottom:6px;}
+.dtph-sign-in__menu-item :hover{background-color:#e6f5fd;}
+.dtph-sign-in__menu-item :focus{background-color:#e6f5fd;border:3px solid #1d89bf;}
+.dtph-sign-in__menu-item a{display:inline-block;width:100%;padding:5px 16px 5px 16px;}
+.dtph-sign-in__menu-item a:hover{text-shadow:.5px 0 0 #00476b;text-decoration:none;}
+.dtph-sign-in__menu-item a:visited,.dtph-sign-in__menu-item a:link{color:#069;}
+#dtph-header-third{-webkit-box-shadow:0 3px 6px rgba(0,0,0,.16);-moz-box-shadow:0 3px 6px rgba(0,0,0,.16);box-shadow:0 3px 6px rgba(0,0,0,.16);height:127px;padding-bottom:20px;padding-top:20px;}
+.dtph-header-third__first{height:64px;}
+.dtph-header-third__first.dtph-menu__closed{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+#dtph-alt-lang-link{margin-right:12px; color: #069;}
+#dtph-header-util-links{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+#dtph-header-util-links .dtph-util-link{margin-right:12px;}
+#dtph-header-util-links .dtph-util-link.dtph-last{margin-left:12px;margin-right:0;}
+#dtph-block-howyouknowdescription .dtph-field--name-body{display: -webkit-box;color: #444;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;}
+#dtph-howyouknow-official{margin-right:24px;}
+.dtph-howyouknow-header-block{-webkit-flex-basis:50%;-moz-flex-basis:50%;-ms-flex-basis:50%;flex-basis:50%;}
+	.dtph-menu--horizontal{	
+font-size:1.125rem;	
+line-height:1.2777777778;	
+text-align:right;	
+       font-family: "Source Sans Pro";	
+              font-style:normal;	
+              font-weight:400;	
+}
+
+.dtph-howyouknow__lock-image{
+    height:1.5ex;width:1.21875ex;
+}
+.dtph-menu--horizontal a:hover{text-shadow:.5px 0 0 #00476b;text-decoration:none;}
+.dtph-menu--horizontal a:visited,.dtph-menu--horizontal a:link{color:#036;}
+.dtph-menu--horizontal .dtph-menu__item{display:inline;margin-left:32px;border-bottom:none;}
+.dtph-menu--horizontal .dtph-nav__link{width:auto;}
+.dtph-menu--horizontal .dtph-nav__link:focus{outline:none;border-radius:1px;-webkit-box-shadow:0 0 0 3px #1d89bf;-moz-box-shadow:0 0 0 3px #1d89bf;box-shadow:0 0 0 3px #1d89bf;}
+#dtph-primary-nav{display:block;}
+#dtph-block-signinlink{display:none;}
+.dtph-content-container.dtph-header-third__second{border-bottom:none;}
+#dtph-block-searchplaceholder .dtph-sign-in-link{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;height:44px;padding-top:10px;}
+#dtph-block-searchplaceholder .dtph-sign-in-link__sep{height:24px;margin-left:32px;margin-right:32px;}
+#dtph-block-searchplaceholder .dtph-sign-in--button__text:focus{outline:none;border-radius:1px;-webkit-box-shadow:0 0 0 3px #1d89bf;-moz-box-shadow:0 0 0 3px #1d89bf;box-shadow:0 0 0 3px #1d89bf;}
+#site-search .dtph-input-group__field{width:353px;}
+.dtph-menu-toggle--header{display:none;}
+.dtph-hidden-desktop{display:none;}
+}
+#dtph-header-first{background-color:transparent;  line-height: 1.25;}
+#dtph-preview-message{padding:3px 16px;background-color:#ebebeb;color:#444;text-align:center;font-size:0.875rem;line-height:1.4285714286;}
+.dtph-region-header_first .dtph-special-msg{text-align:center;padding-top:6px;padding-bottom:6px;background-color:#c33;color:#fff;}
+.dtph-region-header_first .dtph-special-msg a{color:#fff;text-decoration:underline;font-family: "Source Sans Pro";}
+/*}*/
+.dtph-make-white {
+  background-color: #ffffff;
+}
+@media(max-width: 860px){
+    #dtph-primary-nav {padding-top: 11px;}
+    #dtph-header-third{-webkit-box-shadow:0 3px 6px rgba(0,0,0,.16);-moz-box-shadow:0 3px 6px rgba(0,0,0,.16);box-shadow:0 3px 6px rgba(0,0,0,.16);}
+    .dtph-content-container.dtph-header-third__second.dtph-menu__open{
+     background-color: #ffffff;
+     margin-top: 0px;
+     margin-bottom: -10px;
+     padding-bottom: 0px;
+     padding-top: 0px;
+    }
+
+    .nav-link{
+        font-family: "Source Sans Pro",Arial,sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    .mobile-menu-links{
+        font-family: "Source Sans Pro",Arial,sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+	.dtph-header-third__first{
+	padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    padding-left: 16px;	
+}
+
+.make-iframe-static{
+    position: static;
+}
+    .dtph-menu--horizontal{list-style:none;padding-left:0;margin-top:0px;margin-bottom:0; margin-right:.5px; color: #036; background-color: #ffffff;}
+    #dtph-search-form { display: block; width: 100%; margin: auto;}
+    .dtph-header-third__first.dtph-menu__open {
+        border-bottom: 3px solid #ebebeb;
+    }
+    .dtph-header-third__second.dtph-menu__open {
+        border-bottom: 3px solid #ebebeb;
+     }
+     #dtph-block-uscis-design-branding{
+        padding-top: 0px;
+     }
+     #dtph-primary-nav {
+        color: #069;
+     }
+
+     .dtph-menu-toggle__text{
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.2777777778;
+     }
+
+     #dtph-bold-text-menu{
+         font-weight: 600;
+         font-size: 1.125rem;
+         line-height: 1.2777777778;
+     }
+
+     .dtph-menu--horizontal.dtph-menu{
+        font-family: "Source Sans Pro";
+         font-size: 1rem;	
+        line-height: 1.2777777778;
+        font-style:normal;
+        font-weight:400;
+     }
+
+     .dtph-mobile-menu-links {
+        color: #444444;
+        font-family: "Source Sans Pro";
+         font-size: 1rem;	
+        line-height: 1.2777777778;
+        font-style:normal;
+        font-weight:400;
+    }
+
+
+     #dtph-home-logo{
+        padding-left: 0px;
+     }
+
+     #dtph-search-form {
+        padding-bottom: 0px;
+     }
+
+     #dtph-alt-lang-link {
+     color: #069;
+     }
+
+     .dtph-mobile-menu-links {
+       color: #444444;
+     }
+
+     .dtph-menu-toggle__text {
+        font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 1.2777777778;
+		font-family: "Source Sans Pro";
+     }
+	 .dtph-menu-toggle--header .svg-inline--fa {
+    font-size: 1.25rem;
+    line-height: 1.4;
+	}
+
+input-group__btn--icon {
+    position: absolute;
+    top: 12px;
+    right: 1rem;
+    float: right;
+    text-align: right;
+    white-space: nowrap;
+}
+}
+
+
+.dtph-special-msg a {
+    font-family: "Source Sans Pro";
+	font-weight: 400;  
+	font-size: 1rem;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+/*! CSS Used from: https://www.uscis.gov/sites/default/files/css/css_CzQ6gJUtS_Mg2vNBasOgXL8mFWyW6wCFYQ0nG3GDAsk.css ; media=print */
+
+@media print{
+button.dtph-menu-toggle__link-horizontal,.dtph-input-group,#header-flag,.dtph-region-header_second_right{display:none!important;}
+button,[type=button],[type=submit]{background-color:#fff;border-color:#cbcbcb;color:#cbcbcb;}
+.dtph-header-third__first.dtph-menu__closed{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+}
+}
+/* ! CSS Used fontfaces */
+/* @font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:auto;src:url("./fonts/fa-solid-900.otf")format("opentype");} */
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:auto;src:url("./fonts/fa-solid-dual-900.otf")format("opentype");}
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:400;font-display:auto;src:url("./fonts/fa-regular-400.otf")format("opentype");}
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:300;font-display:auto;src:url("./fonts/fa-light-300.otf")format("opentype");}
+@font-face{font-family:Source Sans Pro Light;font-style:normal;font-weight:300;src:url("./fonts/sourcesanspro-light.otf") format("opentype");}
+@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:600;src:url("./fonts/sourcesanspro-semibold.otf") format("opentype"),url("./fonts/sourcesanspro-semibold-webfont.ttf") format("truetype"),url("./fonts/sourcesanspro-semibold-webfont.woff") format("woff"),url("./fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),url("./fonts/sourcesanspro-semibold-webfont.eot"),url("./fonts/sourcesanspro-semibold-webfont.eot#iefix") format("embedded-opentype");}
+@font-face{font-family:"Source Sans Pro";font-style:italic;font-weight:600;src:url("./fonts/sourcesanspro-semiboldit.otf") format("opentype"),url("./fonts/sourcesanspro-semiboldit-webfont.ttf") format("truetype"),url("./fonts/sourcesanspro-semiboldit-webfont.woff") format("woff"),url("./fonts/sourcesanspro-semiboldit-webfont.woff2") format("woff2"),url("./fonts/sourcesanspro-semiboldit-webfont.eot#iefix") format("embedded-opentype");}
+@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:400;src:url("./fonts/sourcesanspro-regular.otf") format("opentype"),url("./fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),url("./fonts/sourcesanspro-regular-webfont.eot"),url("./fonts/sourcesanspro-regular-webfont.eot#iefix") format("embedded-opentype");}
+@font-face{font-family:"Source Sans Pro";font-style:italic;font-weight:400;src:url("./fonts/sourcesanspro-it.otf") format("opentype"),url("./fonts/sourcesanspro-it-webfont.eot"),url("./fonts/sourcesanspro-it-webfont.eot#iefix") format("embedded-opentype");}
+@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:700;src:url("./fonts/sourcesanspro-bold.otf") format("opentype"),url("./fonts/sourcesanspro-bold-webfont.ttf") format("truetype"),url("./fonts/sourcesanspro-bold-webfont.woff") format("woff"),url("./fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),url("./fonts/sourcesanspro-bold-webfont.eot"),url("./fonts/sourcesanspro-bold-webfont.eot#iefix") format("embedded-opentype");}
+@font-face{font-family:"Source Sans Pro";font-style:italic;font-weight:700;src:url("./fonts/sourcesanspro-boldit.otf") format("opentype"),url("./fonts/sourcesanspro-boldit-webfont.ttf") format("truetype"),url("./fonts/sourcesanspro-boldit-webfont.woff") format("woff"),url("./fonts/sourcesanspro-boldit-webfont.woff2") format("woff2"),url("https://www.uscis.gov/profiles/uscisd8_gov/themes/custom/uscis_design/css/font/sourcesanspro-boldit-webfont.eot"),url("./fonts/sourcesanspro-boldit-webfont.eot#iefix") format("embedded-opentype");}
