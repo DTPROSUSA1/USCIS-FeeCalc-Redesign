@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/css/main.b7914067.chunk.css",
-    "main.js": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/main.ef5e87ed.chunk.js",
-    "main.js.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/main.ef5e87ed.chunk.js.map",
+    "main.css": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/css/main.9ff1b346.chunk.css",
+    "main.js": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/main.4813d57a.chunk.js",
+    "main.js.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/main.4813d57a.chunk.js.map",
     "runtime-main.js": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/runtime-main.556e3b6b.js",
     "runtime-main.js.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/runtime-main.556e3b6b.js.map",
     "static/js/2.01287520.chunk.js": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/2.01287520.chunk.js",
@@ -16,7 +16,7 @@
     "static/js/5.a30a2c11.chunk.js.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/5.a30a2c11.chunk.js.map",
     "index.html": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/index.html",
     "static/css/3.61b50e66.chunk.css.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/css/3.61b50e66.chunk.css.map",
-    "static/css/main.b7914067.chunk.css.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/css/main.b7914067.chunk.css.map",
+    "static/css/main.9ff1b346.chunk.css.map": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/css/main.9ff1b346.chunk.css.map",
     "static/js/2.01287520.chunk.js.LICENSE.txt": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/js/2.01287520.chunk.js.LICENSE.txt",
     "static/media/common.css": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/media/Icon-Dropdown-up.a8dcc285.svg",
     "static/media/USCIS_RGB_Hor_Blue_at20.093702d7.svg": "/etc.clientlibs/uscis-fee-calculator/clientlibs/clientlib-react/resources/static/media/USCIS_RGB_Hor_Blue_at20.093702d7.svg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.556e3b6b.js",
     "static/js/2.01287520.chunk.js",
-    "static/css/main.b7914067.chunk.css",
-    "static/js/main.ef5e87ed.chunk.js"
+    "static/css/main.9ff1b346.chunk.css",
+    "static/js/main.4813d57a.chunk.js"
   ]
 }

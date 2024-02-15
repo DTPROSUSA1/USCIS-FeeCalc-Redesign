@@ -74,23 +74,23 @@ const FormAccordion = ({ formDetails, globalConfig }) => {
         <div className="accordion">
           <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel___layoutContainer" className="row guideLayout guideAccordionLayout" >
             <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel___layoutPanelContainer" className="col-md-12 PanelContainer">
-              <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel___guide-item-container" className="accordion-navigators">
+              <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel___guide-item-container" className={`accordion-navigators ${openAccordions[index] ? "active" : ""}`}>
               <div id="im_guideContainer-rootPanel-panel-parentWhatFeeCalcPanel-whatsfeecalcpanel__" style={{display: "none"}} data-guide-template-marker="true"></div>
-              <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel-whatsfeecalcpanel___guide-item" data-guide-parent-id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel__" className="">
+              <div id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel-whatsfeecalcpanel___guide-item" data-guide-parent-id="guideContainer-rootPanel-panel-parentWhatFeeCalcPanel__" className={`${openAccordions[index] ? "active" : ""}`}>
                 <div className="guideHeader" role="heading">
             <a role="button" tabIndex="0" aria-selected={openAccordions[index]} aria-expanded={openAccordions[index]} data-guide-toggle="accordion-tab">
               <span dangerouslySetInnerHTML={{ __html: sanitizedName }}  className={`guideSummary ${openAccordions[index] ? "dtph-active" : ""}`} id='dtph-us-gov-desc-1'/>
             </a>
           </div>
-          <div className="row" style={{ display: openAccordions[index] ? 'block' : 'none', marginLeft: bulletPoints.length < 1 ? "30px" : '0px' }}>
+          <div className="row" style={{ display: openAccordions[index] ? 'block' : 'none' }}>
             <div className="col-md-12 active">
               <div className="guidetextdraw guidefield">
-              <ul className="custom-bullet-list">
+              <ul className="custom-bullet-list" >
                   {bulletPoints.map((point, index) => (
-                    <li key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
+                    <li style={{paddingLeft: '18px'}} key={index} dangerouslySetInnerHTML={{ __html: point }}></li>
                   ))}
               </ul>
-              <b><p className='feeString' dangerouslySetInnerHTML={{ __html: feeString }}></p></b>
+              <b><p className='feeString' style={{marginLeft: '18px'}} dangerouslySetInnerHTML={{ __html: feeString }}></p></b>
               </div>
             </div>
           </div>

@@ -1460,36 +1460,7 @@ div.aemform.aem-Grid-Column--default--12{
 	.accordion-navigators:hover{
 	background: #EBEBEB;
 	}
-	.accordion-navigators .active > .guideHeader > a{
-	color: #444444;
-		/*background-color: #f9f9f9;*/
-		border-radius: 0px 0px 0px 0px;
-		border-style: solid;
-		border-bottom-width: 0px;
-		border-top-width: 0px;
-		border-left: 3px solid #069;
-		border-right-width: 0px;
-		padding-left: 16px;
-		/* border-color: #CCCCCC; */
-		outline: none !important;
-		font-family: Source Sans Pro Regular, sans-serif;
-		font-size: 20px;
-		line-height: 1.25;
-		font-weight: 400;
-		/* background: url(../assets/Icon-Collapse-small.svg) 98.3% 24px/ auto 1.1rem no-repeat; */
-	}
-	.accordion-navigators .active .guideHeader > a:hover{
-	color: #444444;
-		/*background-color: #EBEBEB;*/
-		border-left: 3px solid #069;
-		border-radius: 0px 0px 0px 0px;
-		border-style: solid;
-		border-bottom-width: 0px;
-		border-top-width: 0px;
-		border-right-width: 0px;
-		/*border-color: #CCCCCC;*/
-		outline: none !important;
-	}
+	
 	.accordion-navigators .guideHeader > a{
 	display: block;
 		color: #444444;
