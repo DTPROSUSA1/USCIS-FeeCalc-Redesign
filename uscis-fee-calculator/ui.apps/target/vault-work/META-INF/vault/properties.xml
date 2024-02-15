@@ -4,7 +4,7 @@
 <comment>USCIS Fee Calculator - UI apps</comment>
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="name">uscis-fee-calculator.ui.apps</entry>
-<entry key="created">2024-02-15T18:08:17.239Z</entry>
+<entry key="created">2024-02-15T18:35:44.518Z</entry>
 <entry key="groupId">com.adobe.aem.guides.wkndspa.react</entry>
 <entry key="dependencies-locations">adobe/cq60:core.wcm.components.content:2.17.12=maven:com.adobe.cq:core.wcm.components.content:2.17.12:zip,adobe/cq60:core.wcm.components.config:2.17.12=maven:com.adobe.cq:core.wcm.components.config:2.17.12:zip</entry>
 <entry key="version">1.0.0-SNAPSHOT</entry>

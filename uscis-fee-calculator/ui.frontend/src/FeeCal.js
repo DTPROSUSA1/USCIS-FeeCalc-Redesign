@@ -15,7 +15,7 @@ function FeeCal() {
   const [globalConfig, setGlobalConfig] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/config')
+    fetch('http://localhost:3000/api/config')
       .then((response) => response.json()) // Parse the response as JSON
       .then((config) => {
         setGlobalConfig(config['General']);
@@ -25,7 +25,7 @@ function FeeCal() {
 
   const handleFormSubmit = (formName) => {
     if (formName) {
-      fetch(`http://localhost:3001/api/form-details/${formName}`)
+      fetch(`http://localhost:3000/api/form-details/${formName}`)
         .then((response) => response.json())
         .then((data) => {
           setSelectedFormDetails(data);
